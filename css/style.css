@@ -1,20 +1,37 @@
 .bernard {
   --width: 112px;
   --height: 156px;
-  background: url(/images/bernard.png) repeat-x;
-  background-position: 0 0;
+  background: url(/images/bernard.png);
   width: var(--width);
   height: var(--height);
-  animation: walk 1s steps(6) infinite;
+  animation: b-walk 1s steps(6) infinite;
+}
+.guybrush {
+  --width: 100px;
+  --height: 150px;
+  background: url(/images/gb_walk.png);
+  width: var(--width);
+  height: var(--height);
+  animation: gb-walk 1s steps(6) infinite;
 }
 
-@keyframes walk {
+@keyframes b-walk {
   0% {
-    background-position: 0
+    background-position: 0 0;
   }
 
   100% {
-    background-position: -672px
+    background-position: -672px 0;
+  }
+}
+
+@keyframes gb-walk {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: -624px 0;
   }
 }
 
