@@ -1,0 +1,20 @@
+.bernard {
+  --width: 112px;
+  --height: 156px;
+  background: url(/images/bernard.png) repeat-x;
+  background-position: 0 0;
+  width: var(--width);
+  height: var(--height);
+  animation: walk 1s steps(6) infinite;
+}
+
+@keyframes walk {
+  0% {
+    background-position: 0
+  }
+
+  100% {
+    background-position: -672px
+  }
+}
+
