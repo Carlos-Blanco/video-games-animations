@@ -9,7 +9,7 @@ playerImage.src = '/images/bernard.png';
 console.log(playerImage.src)
 function animate() {
   ctx.clearRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
-  ctx.drawImage(playerImage, 0, 0);
+  ctx.drawImage(playerImage, 0, 0, 112, 156, 0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
   requestAnimationFrame(animate);
 }
 
