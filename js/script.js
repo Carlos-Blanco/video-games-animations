@@ -16,6 +16,8 @@ console.log(playerImage.src)
 function animate() {
   ctx.clearRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
   ctx.drawImage(playerImage, frameX * spriteWidth, frameY * spriteHeight, spriteWidth, spriteHeight, 0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
+  if (frameX < 6) frameX++
+  else frameX=0;
   requestAnimationFrame(animate);
 }
 
