@@ -6,10 +6,13 @@ const CANVAS_HEIGHT = canvas.height = 300;
 const playerImage = new Image();
 playerImage.src = '/images/bernard.png';
 
+const spriteWidth = 112;
+const spriteHeight = 156;
+
 console.log(playerImage.src)
 function animate() {
   ctx.clearRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
-  ctx.drawImage(playerImage, 0, 0, 112, 156, 0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
+  ctx.drawImage(playerImage, 0 * spriteWidth, 0 * spriteHeight, spriteWidth, spriteHeight, 0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
   requestAnimationFrame(animate);
 }
 
